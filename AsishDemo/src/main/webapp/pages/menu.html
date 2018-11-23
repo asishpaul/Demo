@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Menu</title>
+<style>
+body {
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+	width: 200px;
+	height: 100px;
+	background-color: green;
+}
+li{
+	list-style-type: none;
+	width: 200px;
+	height: 60px;
+	background-color: lightblue;
+	text-align: center;
+	line-height: 50px;
+}
+
+#sas {
+	display: flex;
+	flex-direction: column;
+}
+
+.anchor {
+	background-color: blue;
+	border: none;
+	width: 200px;
+	height: 60px;
+	padding: 10px;
+	
+}
+#container{
+	height: 160px;
+	width: 100px;
+	float: left;
+	flex-direction: column;
+}
+#container1{
+	height: 400px;
+	width: 850px;
+	background-color:none;
+	float: left;
+	margin-left: 190px;
+}
+a{
+	width: 200px;
+	height: 60px;
+	background-color: lightblue;
+}
+</style>
+</head>
+<body>
+	<form name="f1">
+		<h1 align="center">Demo Portal</h1>
+		<hr>
+		
+
+		<div id="container">
+			
+			
+			<ul>
+				<li><a href="../AdminDetails" target="myiframe">Admin Details</a></li>
+				<li><a href="../Pending" target="myiframe">Pending</a></li>
+				<li><a href="newroute.html" target="myiframe">Add route</a></li>
+				<li><a href="../ListAllRoutes"target="myiframe">List of All Routes</a></li>
+				<li><a href="monthlyreport.html"target="myiframe">Monthly Report</a></li>
+				<li><a href="../index.html">Logout</a></li>
+				
+			</ul>
+			
+		</div>
+		
+		<iframe id="container1" name="myiframe" style="border:2px solid blue;"></iframe>
+		
+	</form>
+</body>
+</html>
